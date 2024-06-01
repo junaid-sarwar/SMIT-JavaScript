@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.calculator {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119);
+    margin-bottom: 20px; /* Add some space between calculator and footer */
+}
+
+input {
+    width: 320px;
+    border-color: rgba(255, 255, 255, 0.785);
+    padding: 24px;
+    border-radius: 8px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.button:hover {
+    border-radius: 30%;
+    background: grey;
+    color: #ffffff;
+}
+
+.eqlBtn {
+    background-color: #fb7c14;
+}
+
+.eqlBtn:hover {
+    background-color: white;
+    color: #fb7c14;
+}
+
+.operator {
+    color: #6dee08;
+}
+
+.operator:hover {
+    background-color: #6dee08;
+    color: #ffffff;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid rgb(38, 255, 164);
+    padding: 10px;
+    color: white;
+    background: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 280px; 
+        font-size: 35px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        width: 240px; 
+        font-size: 30px;
+    }
+
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 16px; 
+    }
+}
